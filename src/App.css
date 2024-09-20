@@ -1,38 +1,59 @@
-.App {
+.container {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.count {
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.change-button {
+  padding: 15px 30px; /* Increased padding */
+  font-size: 22px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #d3dfec;
+  background-color: #e2e8ee;
+  color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.increment-button {
+  background-color: rgb(234, 234, 245);
+  padding: 15px 30px;
+}
+
+.increment-button:hover {
+  background-color: green;
+}
+
+.decrement-button {
+  background-color: rgb(223, 223, 235);
+  padding: 15px 30px;
+}
+
+.decrement-button:hover {
+  background-color: #c82333;
+}
+
+.add-button {
+  padding: 15px 30px; /* Increased padding */
+  font-size: 22px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ffc107;
+  background-color: #ffc107;
+  color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #e0a800;
 }
